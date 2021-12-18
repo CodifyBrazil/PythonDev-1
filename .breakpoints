@@ -2,6 +2,12 @@
   "files": {
     "perguntas_e_respostas.py": [
       {
+        "id": "b746cc63-ad1a-4f51-801e-6dbca3b814a4",
+        "line": 26,
+        "version": 1414,
+        "index": 540
+      },
+      {
         "id": "454ab7b1-770d-4106-abad-d392f424eca5",
         "line": 68,
         "version": 1414,
