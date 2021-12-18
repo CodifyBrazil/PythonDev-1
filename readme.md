@@ -11,4 +11,4 @@ Neste repositório, estarei hospedando os códigos criados por mim Rafael, para 
 - Automações
 - Jogos
 <hr> 
-Mas é claro, isso sera um passo a passo, como temos códigos, de iniciantes, pois estou aprendendo, tambem teremos códigos complexos, grandes.
+Mas é claro, isso sera um passo a passo, como temos códigos, de iniciantes, pois estou aprendendo, tambem teremos códigos complexos, grandes, conforme vamos evoluindo na linguagem.
