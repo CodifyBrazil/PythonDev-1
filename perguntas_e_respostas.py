@@ -39,17 +39,39 @@ perguntas = {
 
 pontos = 0
 
+#interaveis do dicionario
 for pk, pv in perguntas.items():
+  #printa a pergunta
     print(f'{pk}: {pv["pergunta"]}')
 
+    # faz a interacao das alternativas
     for rk, rv in pv['respostas'].items():
+      #printa as alternativas
         print(f'[{rk}] {rv}')
-    r = input('Qual a Resposta certa ? ')
-    r = r.upper()
+      
+    r =''
+
+    #se o usuario digitar mais de uma letra, fiuca no loop
+    while r == '' or r == ' ':
+      #pergunta a resposta correta
+      r = input('Qual a Resposta certa ? ')
+      #deixa a resposta em letra maiuscula
+      r = r.upper()
+
+      if len(r) > 1:
+        print('Só pode digitar 1 letra na resposta.')
+        r = ''
+        continue
+
+    #confere se a resposta enviada é a correta
     if r == pv['resposta_certa']:
         print('UHUUUL, voce acertou!')
+        # se for correta, adiciona 1 ponto a cada questao certa
         pontos += 1
     else:
         print('AAAAH, que pena, voce errou!')
 
-print(f'voce fez {pontos} pontos.')
+#conta para ver quantos % acertou de questoes
+porcentagem = pontos/len(perguntas) * 100
+#printa quantos pontos fez, e a porcentagem de acertos
+print(f'voce fez {pontos} pontos, e acertou {porcentagem:.2f}% das questoes.')
